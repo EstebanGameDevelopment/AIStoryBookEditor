@@ -1,10 +1,20 @@
-# Public Domain Stories
+# AI Local Server Providers
 
-These is a collection of public domain stories ready to be processed by the software.
+These are the Python scripts in order to set up local AI servers for image, speech and sound generation.
 
-There are 2 conditions to process the stories.
+- 1. **Image generation:** 
+	- Follow the instructions to install the AI Image Generator [Flux](https://github.com/black-forest-labs/flux)
+ 	- Run the script `python ServerImagesFlux.py`
+  	- Use a tunneling service to get an URL to redirect the calls to your local server (ngrok, tunnelmole, cloudfare)
+  	- Set the URL inside the AI Server Settings page of the application
+- 2. **Speech Generation**
+	- Follow the instructions to install [Coqui TTS](https://github.com/coqui-ai/TTS)
+ 	- Run the script `python ServerSpeechGeneration.py`
+  	- Use a tunneling service to get an URL to redirect the calls to your local server (ngrok, tunnelmole, cloudfare)
+  	- Set the URL inside the AI Server Settings page of the application
+- 3. **Audio Generation**
+	- Follow the instructions to install [Audiocraft](https://github.com/facebookresearch/audiocraft)
+ 	- Run the script `python ServerAudioGeneration.py`
+  	- Use a tunneling service to get an URL to redirect the calls to your local server (ngrok, tunnelmole, cloudfare)
+  	- Set the URL inside the AI Server Settings page of the application
 
-- 1. **Use \<chapter name="chapter's title"\>\</chapter\> tag to encapsulate a chapter:** 
-	That way the system can get exactly the right text for the chapter.
-- 2. **Use character " to encapsulate dialogs:**
-	Most English stories use " to encapsulate the dialogs of the actors. In the case that the character is used to highlight a text use these other similar characters “ ” that won't generate a conflict with the software 
